@@ -1,0 +1,72 @@
+50 50 translate
+   /mreza {0.5 0.3 0 0 setcmykcolor 
+   gsave
+   2 setlinewidth 500 0 moveto 0 0 lineto 0
+   500 lineto stroke
+   grestore
+   gsave
+   0.3 setlinewidth
+   10 { 30 50 moveto 500 50 lineto stroke 0
+   50 translate } repeat
+   grestore
+   gsave
+   0.3 setlinewidth
+   10 { 50 20 moveto 50 500 lineto stroke 50
+   0 translate } repeat
+   grestore
+   gsave
+   /tekst 3 string def /Helvetica findfont 10 scalefont setfont
+   100 100 500 { /y exch def 5 y 2
+   sub moveto y tekst cvs show } for
+   90 100 500 { /x exch def x 5 moveto
+   x 10 add tekst cvs show } for
+   grestore 
+   0 setgray } bind def
+   mreza
+  
+  
+%forpetlja 
+
+10 10 100 {
+	/radijus exch def
+	%/kutkruznice radijus 2 mul def
+	150 300 radijus 270 radijus 2 mul arc
+	%/linije radijus 0.05 mul def
+	radijus 0.05 mul setlinewidth	
+	%/boja radijus 0.01 mul def
+	0 radijus 0.01 mul 1 0 setcmykcolor
+	stroke
+} for 
+%100 -10 10 {
+	%/radijus exch def
+	%/kutkruznice radijus 2 mul def
+	%400 300 radijus 270 kutkruznice arc
+	%/linije radijus 20 div def
+	%linije setlinewidth
+	%/boja radijus 100 div def
+	%0 boja 1 0 setcmykcolor
+	%stroke
+	%} for
+
+%repeatpetlja
+ 
+
+3 setlinewidth	
+0.8 0 0.4 0.3 setcmykcolor
+/kaotrokut {
+	0 50 moveto
+	50 150 lineto
+	100 50 lineto
+	75 50 lineto
+	125 150 lineto
+	stroke
+	} def
+6 { 
+	kaotrokut 
+	75 0 translate 
+	} repeat
+
+
+	
+
+
